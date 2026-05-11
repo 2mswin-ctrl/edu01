@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독도 지리적 특성 및 다각적 가치 분석</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .tab-active { border-bottom: 3px solid #1e40af; color: #1e40af; font-weight: 700; }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16 px-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">독도 지리적 특성 및 다각적 가치 분석</h1>
+        <p class="text-lg md:text-xl opacity-90 max-w-3xl mx-auto leading-relaxed">
+            대한민국의 가장 동쪽 끝, 아름다운 화산섬 독도의 지리적 연관성과 전략적 가치를 분석한 종합 브리핑입니다.
+        </p>
+    </header>
+
+    <!-- Executive Summary -->
+    <section class="max-w-6xl mx-auto -mt-10 px-4">
+        <div class="glass-card rounded-xl shadow-2xl p-8 border-t-4 border-blue-600">
+            <h2 class="text-2xl font-bold mb-4 text-blue-900"><i class="fas fa-clipboard-check mr-2"></i>요약 (Executive Summary)</h2>
+            <p class="text-gray-700 leading-relaxed">
+                본 문서는 대한민국의 영토인 독도의 지리적 특성, 자연환경, 영역 개념 및 다각적 가치를 종합적으로 분석한 결과 보고서입니다. 
+                독도는 경상북도 울릉군에 속한 화산섬으로, 지리적으로 울릉도와 긴밀하게 연결되어 있으며 역사적으로 울릉도 주민들의 생활권에 포함되어 왔습니다. 
+                특히 독도는 해안선으로부터 12해리의 영해와 200해리의 배타적 경제수역(EEZ)을 형성하는 핵심 기점으로, 막대한 지하자원과 어족 자원을 보유하고 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Interactive Tabs Section -->
+    <main class="max-w-6xl mx-auto py-12 px-4">
+        <!-- Navigation Tabs -->
+        <div class="flex flex-wrap border-b border-gray-200 mb-8 overflow-x-auto">
+            <button onclick="showTab('loc')" id="tab-loc" class="tab-btn px-6 py-3 text-lg transition-all tab-active">지리 및 위치</button>
+            <button onclick="showTab('env')" id="tab-env" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">자연 및 환경</button>
+            <button onclick="showTab('law')" id="tab-law" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">국가 영역</button>
+            <button onclick="showTab('val')" id="tab-val" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">다각적 가치</button>
+            <button onclick="showTab('his')" id="tab-his" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">수호의 노력</button>
+        </div>
+
+        <!-- Tab Content: Location -->
+        <div id="content-loc" class="tab-content fade-in">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-blue-800">1. 지리적 위치 및 물리적 구성</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                        <h4 class="font-bold text-lg mb-3">주요 지점 간 거리</h4>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <span><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>죽변 - 독도</span>
+                                <span class="font-bold">216.8km</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b pb-2 text-blue-700 bg-blue-50 p-1 rounded">
+                                <span><i class="fas fa-star text-yellow-500 mr-2"></i>울릉도 - 독도</span>
+                                <span class="font-bold text-xl">87.4km</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b pb-2 text-gray-500">
+                                <span><i class="fas fa-map-marker text-gray-400 mr-2"></i>일본 오키섬 - 독도</span>
+                                <span>157.5km</span>
+                            </li>
+                        </ul>
+                        <p class="mt-4 text-sm text-gray-600 font-medium">* 울릉도에서는 맑은 날 육안 가시 가능 (오키섬 불가)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                        <h4 class="font-bold text-lg mb-3">행정 정보</h4>
+                        <p class="mb-2"><strong>전체 면적:</strong> 187,554㎡</p>
+                        <p class="text-sm text-gray-600 mb-4">(서도 88,740㎡, 동도 73,297㎡ 외 부속도서)</p>
+                        <div class="grid grid-cols-1 gap-2 text-sm">
+                            <div class="bg-gray-50 p-3 rounded"><strong>동도:</strong> 경상북도 울릉군 울릉읍 독도리 이사부길 (경비대)</div>
+                            <div class="bg-gray-50 p-3 rounded"><strong>서도:</strong> 경상북도 울릉군 울릉읍 독도리 안용복길 (주민숙소)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center bg-blue-100 rounded-xl p-8 text-center border-2 border-dashed border-blue-300">
+                    <div class="text-6xl text-blue-400 mb-4"><i class="fas fa-mountain"></i></div>
+                    <h4 class="text-xl font-bold text-blue-900 mb-4">지질학적 연관성</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        울릉도와 독도는 모두 조면암 위주의 <strong>화산섬</strong>으로 지질학적 유사성을 띠며, 해저 지형상 <strong>해산(Sea Mount)</strong>의 형태로 서로 연결되어 있습니다.
+                    </p>
+                    <p class="text-sm text-blue-800 bg-white p-3 rounded shadow-sm italic">
+                        "일본 오키섬은 화산 활동과 무관한 편마암으로 구성되어 있어 독도와 지질학적 연관성이 없습니다."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Environment -->
+        <div id="content-env" class="tab-content hidden fade-in">
+            <h3 class="text-2xl font-bold text-blue-800 mb-6">2. 자연환경 및 형성 과정</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 text-orange-600 text-2xl">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">탄생 시기</h4>
+                    <p class="text-sm text-gray-600">약 460만년 ~ 250만년 전</p>
+                    <p class="mt-2 font-bold text-orange-600">울릉도·제주도보다 형님</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 text-2xl">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">연평균 기온</h4>
+                    <p class="text-sm text-gray-600">약 12°C</p>
+                    <p class="mt-2 font-bold text-blue-600">온화한 해양성 기후</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-600 text-2xl">
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">강수 특성</h4>
+                    <p class="text-sm text-gray-600">연평균 1,240mm</p>
+                    <p class="mt-2 font-bold text-gray-700">연중 180일 이상 비/눈</p>
+                </div>
+            </div>
+            <div class="mt-8 bg-white p-8 rounded-xl shadow-md border-t-4 border-gray-400">
+                <p class="leading-relaxed">
+                    독도는 <strong>연중 맑은 날이 약 60일</strong> 정도에 불과하며, 바다의 영향으로 안개가 자주 발생하는 변화무쌍한 기후를 가지고 있습니다. 이러한 환경은 독도 특유의 생태계를 형성하는 기반이 됩니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- Tab Content: Law -->
+        <div id="content-law" class="tab-content hidden fade-in">
+            <h3 class="text-2xl font-bold text-blue-800 mb-6">3. 국가 영역 및 법적 개념</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow-md overflow-hidden">
+                    <thead class="bg-blue-800 text-white">
+                        <tr>
+                            <th class="py-4 px-6 text-left">구분</th>
+                            <th class="py-4 px-6 text-left">정의 및 범위</th>
+                            <th class="py-4 px-6 text-left">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-bold">영토</td>
+                            <td class="py-4 px-6">국가의 영역이 미치는 지표상의 범위</td>
+                            <td class="py-4 px-6 text-blue-600">독도 섬 자체</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-bold">영해</td>
+                            <td class="py-4 px-6">해안선으로부터 12해리(약 22.2km)</td>
+                            <td class="py-4 px-6">1해리 = 1,852m</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-bold">영공</td>
+                            <td class="py-4 px-6">영토와 영해의 수직 상공</td>
+                            <td class="py-4 px-6">대기권 이내</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-bold bg-blue-50">배타적 경제수역(EEZ)</td>
+                            <td class="py-4 px-6 bg-blue-50">기선에서 200해리 범위 내 수역</td>
+                            <td class="py-4 px-6 bg-blue-50 font-medium text-red-600">자원 탐사·개발 주권</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tab Content: Value -->
+        <div id="content-val" class="tab-content hidden fade-in">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-blue-800">4. 다각적 가치 분석</h3>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md border-r-4 border-yellow-500">
+                        <h4 class="font-bold text-lg text-yellow-700 flex items-center mb-3">
+                            <i class="fas fa-gas-pump mr-2"></i>에너지 자원
+                        </h4>
+                        <p class="text-gray-700 mb-2"><strong>가스 하이드레이트(Gas Hydrate):</strong></p>
+                        <p class="text-sm bg-yellow-50 p-3 rounded">
+                            독도 인근 해저 약 6억 톤 매장 추정. <br>
+                            대한민국 국민이 약 30년간 사용 가능한 막대한 에너지원.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md border-r-4 border-blue-400">
+                        <h4 class="font-bold text-lg text-blue-700 flex items-center mb-3">
+                            <i class="fas fa-fish mr-2"></i>수산 및 경제
+                        </h4>
+                        <ul class="text-sm space-y-2 text-gray-700">
+                            <li><i class="fas fa-check text-blue-400 mr-1"></i>한류와 난류가 교차하는 <strong>조경 수역</strong> 형성</li>
+                            <li><i class="fas fa-check text-blue-400 mr-1"></i>연간 약 520억 원 이상의 경제적 가치 창출</li>
+                            <li><i class="fas fa-check text-blue-400 mr-1"></i>관광객 연간 약 13만 명 방문 (2008 기준)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-indigo-900 text-white p-8 rounded-xl shadow-2xl">
+                        <h4 class="font-bold text-xl mb-4 flex items-center">
+                            <i class="fas fa-shield-alt mr-2 text-indigo-300"></i>전략적 및 학술적 가치
+                        </h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-bold text-indigo-200">안보 및 교통 기지</p>
+                                <p class="text-sm opacity-90">동해상의 중요 방위 거점이자 해상 운송로. 선박 긴급 대피소 및 항공기 유도 기지 역할.</p>
+                            </div>
+                            <div class="h-px bg-indigo-700"></div>
+                            <div>
+                                <p class="font-bold text-indigo-200">해양 과학 기지</p>
+                                <p class="text-sm opacity-90">기후 관측, 어장 예보, 지질학 연구의 최적지로서 독보적 학술 가치 보유.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: History -->
+        <div id="content-his" class="tab-content hidden fade-in">
+            <h3 class="text-2xl font-bold text-blue-800 mb-6">5. 독도를 지켜온 노력</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Person 1 -->
+                <div class="bg-white rounded-xl shadow overflow-hidden border-b-4 border-blue-600">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">선조</div>
+                            <h4 class="ml-4 font-bold text-xl">이사부 & 안용복</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            신라의 이사부 장군(우산국 복속)부터 조선의 안용복까지, 역사적 문헌과 실천을 통해 독도 주권을 확고히 했습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- Person 2 -->
+                <div class="bg-white rounded-xl shadow overflow-hidden border-b-4 border-green-600">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">정착</div>
+                            <h4 class="ml-4 font-bold text-xl">최종덕</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            독도로 주민등록을 이전하여 독도를 '유인도'로 만드는 데 기여한 최초의 주민입니다. 민간인 정착의 실질적 토대를 닦았습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- Org -->
+                <div class="bg-white rounded-xl shadow overflow-hidden border-b-4 border-red-600">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-bold">현재</div>
+                            <h4 class="ml-4 font-bold text-xl">독도연구소</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            동북아역사재단 산하 연구기관으로, 학술 연구 및 교육을 통해 국제사회에 독도 주권의 정당성을 알리고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="mt-12 bg-blue-50 border border-blue-200 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between">
+                <div>
+                    <h4 class="text-xl font-bold text-blue-900 mb-2">우리의 관심이 독도를 지킵니다</h4>
+                    <p class="text-blue-700">독도의 날(10월 25일)을 기억하고 독도 체험관 등을 방문해보세요.</p>
+                </div>
+                <div class="mt-6 md:mt-0 flex space-x-4">
+                    <span class="px-6 py-2 bg-blue-600 text-white rounded-full font-bold shadow-md cursor-pointer hover:bg-blue-700 transition">체험관 찾기</span>
+                    <span class="px-6 py-2 border-2 border-blue-600 text-blue-600 rounded-full font-bold cursor-pointer hover:bg-blue-50 transition">더 알아보기</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 mt-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Dokdo, Land of Korea</h2>
+                <p class="text-gray-400 max-w-md">지리적, 역사적, 국제법적으로 독도는 명백한 대한민국의 영토입니다. 우리는 지속적인 연구와 관심을 통해 우리 영토를 지켜나갑니다.</p>
+            </div>
+            <div class="text-left md:text-right">
+                <p class="text-sm text-gray-500 mb-2">분석 브리핑 자료: 제공된 텍스트 기반</p>
+                <p class="text-xs text-gray-600">&copy; 2024 Dokdo Briefing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // Show selected tab content
+            document.getElementById('content-' + tabId).classList.remove('hidden');
+            
+            // Update tab button styles
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('tab-active');
+                btn.classList.add('text-gray-500');
+            });
+            
+            const activeTab = document.getElementById('tab-' + tabId);
+            activeTab.classList.add('tab-active');
+            activeTab.classList.remove('text-gray-500');
+        }
+
+        // Initialize view
+        window.onload = function() {
+            showTab('loc');
+        }
+    </script>
+</body>
+</html>
