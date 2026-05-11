@@ -14,6 +14,9 @@
         .tab-active { border-bottom: 3px solid #1e40af; color: #1e40af; font-weight: 700; }
         .fade-in { animation: fadeIn 0.5s ease-in; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        /* 외부 링크 버튼 스타일 */
+        .link-btn { border-bottom: 3px solid transparent; }
+        .link-btn:hover { color: #2563eb; border-bottom: 3px solid #93c5fd; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -41,12 +44,20 @@
     <!-- Interactive Tabs Section -->
     <main class="max-w-6xl mx-auto py-12 px-4">
         <!-- Navigation Tabs -->
-        <div class="flex flex-wrap border-b border-gray-200 mb-8 overflow-x-auto">
+        <div class="flex flex-wrap border-b border-gray-200 mb-8 overflow-x-auto whitespace-nowrap">
             <button onclick="showTab('loc')" id="tab-loc" class="tab-btn px-6 py-3 text-lg transition-all tab-active">지리 및 위치</button>
             <button onclick="showTab('env')" id="tab-env" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">자연 및 환경</button>
             <button onclick="showTab('law')" id="tab-law" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">국가 영역</button>
             <button onclick="showTab('val')" id="tab-val" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">다각적 가치</button>
             <button onclick="showTab('his')" id="tab-his" class="tab-btn px-6 py-3 text-lg transition-all text-gray-500 hover:text-blue-600">수호의 노력</button>
+            
+            <!-- 외부 링크 버튼 추가 -->
+            <a href="./01/index.html" class="link-btn px-6 py-3 text-lg text-gray-500 flex items-center hover:bg-blue-50 transition-colors">
+                <i class="fas fa-history mr-2 text-sm"></i>독도연표
+            </a>
+            <a href="./02/02.html" class="link-btn px-6 py-3 text-lg text-gray-500 flex items-center hover:bg-blue-50 transition-colors">
+                <i class="fas fa-book mr-2 text-sm"></i>독도용어
+            </a>
         </div>
 
         <!-- Tab Content: Location -->
